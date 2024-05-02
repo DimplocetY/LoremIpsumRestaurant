@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist/lorem-ipsum-restaurant",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   },
   "storage": {
