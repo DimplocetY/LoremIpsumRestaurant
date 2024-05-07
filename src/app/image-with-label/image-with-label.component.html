@@ -1,0 +1,9 @@
+<div class="image-with-label">
+  <img class="image-with-label__image" src="{{ imgUrl }}" alt="{{ label }}" />
+  <div
+    class="image-with-label__label"
+    [ngClass]="labelPosition === 'left' ? 'position-left' : 'position-right'"
+  >
+    <h2>{{ label }}</h2>
+  </div>
+</div>

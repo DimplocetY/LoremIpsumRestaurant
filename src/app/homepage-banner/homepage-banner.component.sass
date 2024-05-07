@@ -1,0 +1,87 @@
+$primary: rgb(29, 39, 94)
+$secondary: rgb(184, 163, 112)
+
+.page-header
+    height: 700px
+    position: relative
+    margin-bottom: 2rem
+    .background-image
+        width: 100%
+        height: 100%
+        overflow: hidden
+        img
+            width: 120%
+            height: 100%
+            object-fit: cover
+    .banner-text
+        position: absolute
+        top: 200px
+        left: 0
+        right: 0
+        .motto
+            width: 50%
+            h1
+                font-family: 'Lora'
+                font-weight: normal
+    .reservation
+        position: absolute
+        bottom: 0
+        width: 100%
+        background-color: rgba(29, 39, 94, 0.7)
+        .container
+            height: 100%
+            padding: 2rem 0
+            .input-group
+                height: 46px
+            .btn-danger
+                width: -webkit-fill-available
+                background-color: $secondary
+                border: none
+            .reservation-text
+                margin-bottom: 1rem
+                h2,span
+                    color: white
+                a,i
+                    color: $secondary
+                span
+                    display: block
+                    height: 28.5px
+                .phone-number
+                    font-size: 1.5rem
+                    text-decoration: none
+                    &:hover
+                        text-decoration: underline
+    @media (max-width: 992px)
+        height: auto
+        .background-image
+            height: auto
+            max-height: 400px
+
+            img
+                mask-image: linear-gradient(to right, transparent 0%, black 100%)
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 100%)
+        .banner-text
+            top: 3rem
+            .container
+                padding-left: 2rem
+        .reservation
+            position: relative
+            background-color: rgba(29, 39, 94, 0.9)
+            .container
+                padding: 2rem
+                .reservation-text
+                    gap: 1rem
+                    span
+                        height: auto
+                    .text-end
+                        text-align: left !important
+                .contact-form
+                    >.row
+                        gap: 0.5rem
+                        .btn-danger
+                            margin-top: 0.5rem
+    @media (max-width: 475px)
+        .banner-text
+            top: 1rem
+            .motto
+                width: 100%

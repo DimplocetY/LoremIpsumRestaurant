@@ -1,0 +1,44 @@
+$tertiairy: rgb(141,141,141)
+
+.navbar
+    background-color: white
+    .container
+        .navbar-translate
+            width: 100%
+            text-align: center
+            .logo-link
+                cursor: pointer
+                margin-right: 0
+                .logo
+                    max-height: 100px
+                @media (min-width: 992px)
+                    width: 50%
+
+        .navbar-collapse, .navbar-socials
+            width: 25%
+        @media (max-width: 992px)
+            flex-direction: row
+            .navbar-socials
+                max-width: 50px
+                width: 10%
+                .nav-link
+                    text-align: center
+            .navbar-translate
+                width: 90%
+                display: flex
+                .navbar-brand
+                    flex-grow: 1
+                    .logo
+                        height: 50px
+                .navbar-toggler
+                    border: none
+                    &:focus
+                        box-shadow: none
+            .navbar-collapse
+                ul
+                    display: flex
+                    flex-direction: row
+                    border-top: 1px solid $tertiairy
+                    li
+                        width: 50%
+                        text-align: center
